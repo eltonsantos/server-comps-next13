@@ -5,9 +5,5 @@ export async function RepoList() {
     "https://api.github.com/users/eltonsantos/repos"
   ).then((response) => response.json());
 
-  return (
-    <div>
-      {JSON.stringify(repos, null, 2)}
-    </div>
-  );
+  return <div>{JSON.stringify(repos, null, 2)}</div>
 }
